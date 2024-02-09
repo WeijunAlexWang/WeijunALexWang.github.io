@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var hour = date.getHours();
 
   // 假设白天是从6:00到18:00
-  if (hour >= 6 && hour < 18) {
+  if (hour >= 6 && hour < 7) {
     container.className = 'day-theme';
   } else {
     container.className = 'night-theme';
