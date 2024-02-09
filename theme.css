@@ -1,0 +1,11 @@
+/* 白天主题样式 */
+.day-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+/* 夜晚主题样式 */
+.night-theme {
+  background-color: #333;
+  color: #fff;
+}
