@@ -7,12 +7,12 @@
 - *05/2025*, SwapMoE journal version was accepted by IEEE TC. Congratulations to [Rui](https://rui-kong.github.io/)!
 - *04/2025*, WiPlan was accepted by IEEE/ACM IWQoS. Congratulations to Yanlong!
 - *02/2025*, PEACE was accepted by IEEE TMC. Thanks to all collaborators!
-- *01/2025*, VaLoRA was accepted by EuroSys'25 (Fall round). Congratulations to Mi for his first top-conference paper!
+- *01/2025*, VaLoRA was accepted by EuroSys'25 (Fall round). Congratulations to [Mi](https://mi150.github.io/) for his first top-conference paper!
 - *11/2024*, My proposal on "Research on Efficient Inference of Vision-Large-Model" was approved and funded by the China Postdoctoral Science Foundation. 🎉
 - *08/2024*, My proposal on "Key Technologies for Large-Model-powered Edge Video Analysis" was approved and funded by NSFC. We are recruiting [research interns](https://air.tsinghua.edu.cn/info/1030/1564.htm) (both undergraduates and graduates). 🎉
 - *07/2024*, RegenHance was accepted by NSDI'25 (Spring round). Many thanks to Prof. Yunxin Liu's insightful comments!
 - *05/2024*, SwapMoE was accepted by ACL'24. Congratulations to [Rui](https://rui-kong.github.io/)!
-- *02/2024*, AccDecoder journal version was accepted by ACM/IEEE TON. Congratulations to Mi for his first top-journal paper! DUET journal version was accepted by IEEE TMC. Congratulations to [Lihao](https://theeagleofthedesert.github.io/) for his first top-journal paper!
+- *02/2024*, AccDecoder journal version was accepted by ACM/IEEE TON. Congratulations to [Mi](https://mi150.github.io/) for his first top-journal paper! DUET journal version was accepted by IEEE TMC. Congratulations to [Lihao](https://theeagleofthedesert.github.io/) for his first top-journal paper!
 - *01/2024*, Our [Personal LLM Agents Survey](https://arxiv.org/pdf/2401.05459.pdf) was published and reported by [机器之心](https://mp.weixin.qq.com/s/JYB4BzsXhWF8pEUUkvn_GQ).
 - *12/2023*, BiSwift was accepted to IEEE INFOCOM'24. Congratulations to [Lin](https://sunnie-star.github.io/) for her first top-conference paper!
 - *11/2023*, DARPA journal version was accepted by IEEE TMC. Thanks to all collaborators!

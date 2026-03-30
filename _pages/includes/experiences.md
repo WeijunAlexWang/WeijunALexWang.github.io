@@ -16,8 +16,8 @@
 ## Supervision
 
 **Current Members (Interns @ THU)**
-- Liang Mi, from Nanjing University, 2023–, on LLM Serving System, co-advised with Prof. Yunxin Liu. \[TON, NSDI, EuroSys\]
-- Ruofei Ju, from Nanjing University, 2023–, on Embodied AI, co-advised with Prof. Ting Cao. \[MobiCom Demos\]
+- Liang Mi, from Nanjing University, 2023–, on LLM Serving System, co-advised with Prof. Yunxin Liu. \[TON, EuroSys\]
+- Ruofei Ju, from Nanjing University, 2023–, on Embodied AI, co-advised with Prof. Ting Cao. \[MobiCom\]
 
 **Alumni**
 - Yaoting Wang, Master @ UEdinburgh → Ph.D. @ FDU. \[arXiv\]
