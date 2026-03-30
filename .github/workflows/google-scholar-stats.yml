@@ -77,11 +77,11 @@ jobs:
           PYEOF
       - name: Deploy to google-scholar-stats branch
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout --orphan google-scholar-stats
           git rm -rf .
-          mv gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json .
           git add gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json
-          git commit -m "Update Google Scholar stats"
+          git commit -m "Update Google Scholar stats" || echo "No changes to commit"
           git push -f origin google-scholar-stats
