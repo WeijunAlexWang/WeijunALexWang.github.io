@@ -1,5 +1,8 @@
 name: Update Google Scholar Stats
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 8 */7 * *"  # every 7 days
