@@ -11,6 +11,7 @@ on:
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,62 +19,103 @@ jobs:
           python-version: '3.11'
       - name: Install scholarly
         run: pip install scholarly
+      - name: Restore previous stats as fallback
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin google-scholar-stats >/dev/null 2>&1; then
+            git fetch --depth=1 origin google-scholar-stats
+            for f in gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json; do
+              git show "origin/google-scholar-stats:$f" > "$f" || true
+            done
+          fi
+
+          if [ ! -s gs_data.json ]; then
+            cat > gs_data.json <<'EOF'
+          {"citedby":0,"publications":{},"publications_by_title":{}}
+          EOF
+          fi
+
+          if [ ! -s gs_data_shieldsio.json ]; then
+            cat > gs_data_shieldsio.json <<'EOF'
+          {"schemaVersion":1,"label":"citations","message":"0","color":"9cf","namedLogo":"Google Scholar"}
+          EOF
+          fi
+
+          if [ ! -s paper_personal_llm_agents_shieldsio.json ]; then
+            cat > paper_personal_llm_agents_shieldsio.json <<'EOF'
+          {"schemaVersion":1,"label":"citations","message":"0","color":"9cf","namedLogo":"Google Scholar"}
+          EOF
+          fi
       - name: Fetch Google Scholar stats
+        continue-on-error: true
+        timeout-minutes: 4
         run: |
           python - <<'PYEOF'
           import json
+          import time
           from scholarly import scholarly
 
-          author = scholarly.search_author_id('ApKD824AAAAJ')
-          author = scholarly.fill(author)
+          last_error = None
+          for attempt in range(1, 4):
+              try:
+                  author = scholarly.search_author_id('ApKD824AAAAJ')
+                  author = scholarly.fill(author)
 
-          total = author.get('citedby', 0)
+                  total = author.get('citedby', 0)
 
-          publications = {}
-          publications_by_title = {}
-          for pub in author.get('publications', []):
-              pid = pub.get('author_pub_id', '')
-              citations = pub.get('num_citations', 0)
-              publications[pid] = {'num_citations': citations}
-              title = pub.get('bib', {}).get('title', '').strip().lower()
-              if title:
-                  publications_by_title[title] = {
-                      'num_citations': citations,
-                      'author_pub_id': pid
+                  publications = {}
+                  publications_by_title = {}
+                  for pub in author.get('publications', []):
+                      pid = pub.get('author_pub_id', '')
+                      citations = pub.get('num_citations', 0)
+                      publications[pid] = {'num_citations': citations}
+                      title = pub.get('bib', {}).get('title', '').strip().lower()
+                      if title:
+                          publications_by_title[title] = {
+                              'num_citations': citations,
+                              'author_pub_id': pid
+                          }
+
+                  gs_data = {
+                      'citedby': total,
+                      'publications': publications,
+                      'publications_by_title': publications_by_title
                   }
 
-          gs_data = {
-              'citedby': total,
-              'publications': publications,
-              'publications_by_title': publications_by_title
-          }
+                  with open('gs_data.json', 'w') as f:
+                      json.dump(gs_data, f)
 
-          with open('gs_data.json', 'w') as f:
-              json.dump(gs_data, f)
+                  shieldsio = {
+                      "schemaVersion": 1,
+                      "label": "citations",
+                      "message": str(total),
+                      "color": "9cf",
+                      "namedLogo": "Google Scholar"
+                  }
+                  with open('gs_data_shieldsio.json', 'w') as f:
+                      json.dump(shieldsio, f)
 
-          shieldsio = {
-              "schemaVersion": 1,
-              "label": "citations",
-              "message": str(total),
-              "color": "9cf",
-              "namedLogo": "Google Scholar"
-          }
-          with open('gs_data_shieldsio.json', 'w') as f:
-              json.dump(shieldsio, f)
+                  target_title = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
+                  target_citations = publications_by_title.get(target_title, {}).get('num_citations', 0)
+                  personal_llm_agents_shieldsio = {
+                      "schemaVersion": 1,
+                      "label": "citations",
+                      "message": str(target_citations),
+                      "color": "9cf",
+                      "namedLogo": "Google Scholar"
+                  }
+                  with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
+                      json.dump(personal_llm_agents_shieldsio, f)
 
-          target_title = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
-          target_citations = publications_by_title.get(target_title, {}).get('num_citations', 0)
-          personal_llm_agents_shieldsio = {
-              "schemaVersion": 1,
-              "label": "citations",
-              "message": str(target_citations),
-              "color": "9cf",
-              "namedLogo": "Google Scholar"
-          }
-          with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
-              json.dump(personal_llm_agents_shieldsio, f)
-
-          print(f"Total citations: {total}")
+                  print(f"Total citations: {total}")
+                  break
+              except Exception as exc:
+                  last_error = exc
+                  print(f"Attempt {attempt}/3 failed: {exc}")
+                  if attempt < 3:
+                      time.sleep(15 * attempt)
+                  else:
+                      raise last_error
           PYEOF
       - name: Deploy to google-scholar-stats branch
         run: |
