@@ -6,7 +6,7 @@
 
 - **Open Research Fund of National Key Laboratory for Novel Software Technology** (PI), ¥0.02M, 2024.07–2026.06. *(计算机软件新技术全国重点实验室开放课题)*
 
-- **National Postdoctoral Talent Introduction Program** (PI), "Video Analysis System on Heterogeneous Edge Devices", ¥0.93M, 2023.07–2026.06. *(Top 500 nationwide; 国家博士后海外引才专项, "小海优/小QM", 与"博新""青托"互斥)*
+- **National Postdoctoral Talent Introduction Program** (PI), "Video Analysis System on Heterogeneous Edge Devices", ¥0.93M, 2023.07–2026.06. *(Top 500 nationwide; 国家博士后海外引才专项, 与"博新""青托"互斥)*
 
 - **National Key Research and Development Project of China**, "CNEST — Carbon Neutrality and Energy System Transformation", ¥70M, 2023.11–2026.10. *(国家重点研发计划-国际大科学计划培育项目)*
 
