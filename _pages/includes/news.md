@@ -1,0 +1,21 @@
+# 🔥 News
+- *03/2026*, Our MoE edge inference optimization system SMoE was accepted by ISCA'26. Congratulations to Guoying!
+- *02/2026*, Vec-LUT was accepted by MobiSys'26. Congratulations to [Xiangyu](https://xxxxyu.github.io/academic/)!
+- *01/2026*, CompViT was accepted by Springer IJCV. This is our first attempt to explore video analytics in the compressed domain.
+- *12/2025*, Our paper "Efficient LLM Edge Collaboration Deployment with LoRA" won the **Best Student Paper Award** at ICPADS'25! Thanks Xin for carrying us and congratulations to all collaborators. 🎉
+- *09/2025*, BiSwift journal version was accepted by ACM/IEEE TON. Congratulations to Jinghan for her first top-journal paper!
+- *05/2025*, SwapMoE journal version was accepted by IEEE TC. Congratulations to [Rui](https://rui-kong.github.io/)!
+- *04/2025*, WiPlan was accepted by IEEE/ACM IWQoS. Congratulations to Yanlong!
+- *02/2025*, PEACE was accepted by IEEE TMC. Thanks to all collaborators!
+- *01/2025*, VaLoRA was accepted by EuroSys'25 (Fall round). Congratulations to Mi for his first top-conference paper!
+- *11/2024*, My proposal on "Research on Efficient Inference of Vision-Large-Model" was approved and funded by the China Postdoctoral Science Foundation. 🎉
+- *08/2024*, My proposal on "Key Technologies for Large-Model-powered Edge Video Analysis" was approved and funded by NSFC. We are recruiting [research interns](https://air.tsinghua.edu.cn/info/1030/1564.htm) (both undergraduates and graduates). 🎉
+- *07/2024*, RegenHance was accepted by NSDI'25 (Spring round). Many thanks to Prof. Yunxin Liu's insightful comments!
+- *05/2024*, SwapMoE was accepted by ACL'24. Congratulations to [Rui](https://rui-kong.github.io/)!
+- *02/2024*, AccDecoder journal version was accepted by ACM/IEEE TON. Congratulations to Mi for his first top-journal paper! DUET journal version was accepted by IEEE TMC. Congratulations to [Lihao](https://theeagleofthedesert.github.io/) for his first top-journal paper!
+- *01/2024*, Our [Personal LLM Agents Survey](https://arxiv.org/pdf/2401.05459.pdf) was published and reported by [机器之心](https://mp.weixin.qq.com/s/JYB4BzsXhWF8pEUUkvn_GQ).
+- *12/2023*, BiSwift was accepted to IEEE INFOCOM'24. Congratulations to [Lin](https://sunnie-star.github.io/) for her first top-conference paper!
+- *11/2023*, DARPA journal version was accepted by IEEE TMC. Thanks to all collaborators!
+- *07/2023*, Happy to be elected to the Postdoctoral Talent Introduction Program from the Ministry of Education, China (国家博士后海外引才专项) and the Shuimu Tsinghua Scholar Program from Tsinghua University (水木学者). Many thanks to my Postdoc hoster Prof. Yunxin Liu. 🎉
+- *04/2023*, VSiM journal version was accepted to TON. Many thanks to our collaborators Yali, Yuhan, Sripriya, Kai, and Prof. Xiaoming Fu!
+- *03/2023*, I finished my short-term Postdoc period in Göttingen and will join in Tsinghua as a Postdoctoral Fellow hosted by Prof. Yunxin Liu on June! Many thanks for my hoster Prof. Xiaoming Fu at Göttingen, really enjoy the research time there. <img src="{{ '/img/thank-you.png' | relative_url }}" alt="thank-you" height="2em" style="height:2em;vertical-align:middle"/>

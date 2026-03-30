@@ -1,0 +1,110 @@
+# Site Settings
+title                    : "Weijun Wang"
+repository               : "wjwang410/wjwang410.github.io"
+url                      : "https://wjwang410.github.io"
+baseurl                  : ""
+
+google_scholar_stats_use_cdn : false
+
+# google analytics
+google_analytics_id      :
+
+# SEO Related
+google_site_verification :
+
+# Site Author
+author:
+  name             : "Weijun Wang"
+  avatar           : "images/wwj.jpg"
+  bio              : "Postdoc @ Tsinghua U"
+  location         : "Beijing, China"
+  email            : "wangweijun@air.tsinghua.edu.cn"
+  github           : "air-embodied-brain"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=ApKD824AAAAJ&view_op=list_works&sortby=pubdate"
+  linkedin         :
+  twitter          :
+  researchgate     :
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - docs
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .github
+  - Gemfile
+  - LICENSE
+  - README
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - vendor
+  - task_plan.md
+  - findings.md
+  - progress.md
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

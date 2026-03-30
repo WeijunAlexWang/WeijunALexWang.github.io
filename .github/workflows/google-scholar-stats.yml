@@ -1,0 +1,84 @@
+name: Update Google Scholar Stats
+
+on:
+  schedule:
+    - cron: "0 8 */7 * *"  # every 7 days
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install scholarly
+        run: pip install scholarly
+      - name: Fetch Google Scholar stats
+        run: |
+          python - <<'PYEOF'
+          import json
+          from scholarly import scholarly
+
+          author = scholarly.search_author_id('ApKD824AAAAJ')
+          author = scholarly.fill(author)
+
+          total = author.get('citedby', 0)
+
+          publications = {}
+          publications_by_title = {}
+          for pub in author.get('publications', []):
+              pid = pub.get('author_pub_id', '')
+              citations = pub.get('num_citations', 0)
+              publications[pid] = {'num_citations': citations}
+              title = pub.get('bib', {}).get('title', '').strip().lower()
+              if title:
+                  publications_by_title[title] = {
+                      'num_citations': citations,
+                      'author_pub_id': pid
+                  }
+
+          gs_data = {
+              'citedby': total,
+              'publications': publications,
+              'publications_by_title': publications_by_title
+          }
+
+          with open('gs_data.json', 'w') as f:
+              json.dump(gs_data, f)
+
+          shieldsio = {
+              "schemaVersion": 1,
+              "label": "citations",
+              "message": str(total),
+              "color": "9cf",
+              "namedLogo": "Google Scholar"
+          }
+          with open('gs_data_shieldsio.json', 'w') as f:
+              json.dump(shieldsio, f)
+
+          target_title = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
+          target_citations = publications_by_title.get(target_title, {}).get('num_citations', 0)
+          personal_llm_agents_shieldsio = {
+              "schemaVersion": 1,
+              "label": "citations",
+              "message": str(target_citations),
+              "color": "9cf",
+              "namedLogo": "Google Scholar"
+          }
+          with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
+              json.dump(personal_llm_agents_shieldsio, f)
+
+          print(f"Total citations: {total}")
+          PYEOF
+      - name: Deploy to google-scholar-stats branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan google-scholar-stats
+          git rm -rf .
+          mv gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json .
+          git add gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json
+          git commit -m "Update Google Scholar stats"
+          git push -f origin google-scholar-stats

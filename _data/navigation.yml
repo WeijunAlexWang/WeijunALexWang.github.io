@@ -1,0 +1,28 @@
+# main links
+main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "News"
+    url: "/#-news"
+
+  - title: "Publications"
+    url: "/#-publications"
+
+  - title: "Honors & Awards"
+    url: "/#-honors-and-awards"
+
+  - title: "Services"
+    url: "/#-services"
+
+  - title: "Grants"
+    url: "/#-grants"
+
+  - title: "Experiences"
+    url: "/#-experiences"
+
+  - title: "Research Impacts"
+    url: "/#-research-impacts"
+
+  - title: "Education"
+    url: "/#-education"

@@ -1,0 +1,13 @@
+.DS_Store
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+jekyll.log
+
+.claude/
+.vscode/
+findings.md
+progress.md
+task_plan.md
