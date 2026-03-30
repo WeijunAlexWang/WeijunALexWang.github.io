@@ -12,8 +12,8 @@ main:
   - title: "Honors & Awards"
     url: "/#-honors-and-awards"
 
-  - title: "Services"
-    url: "/#-services"
+  - title: "Research Impacts"
+    url: "/#-research-impacts"
 
   - title: "Grants"
     url: "/#-grants"
@@ -21,8 +21,8 @@ main:
   - title: "Experiences"
     url: "/#-experiences"
 
-  - title: "Research Impacts"
-    url: "/#-research-impacts"
-
   - title: "Education"
     url: "/#-education"
+
+  - title: "Services"
+    url: "/#-services"
