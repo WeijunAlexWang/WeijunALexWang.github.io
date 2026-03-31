@@ -4,7 +4,7 @@
 
 Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&user=ApKD824AAAAJ) <a href="https://scholar.google.com/citations?hl=en&user=ApKD824AAAAJ"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FWeijunAlexWang%2Fwjwang410github.io@google-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar Citations"></a>
 
-* \* Corresponding author; <sup>†</sup> Co-first author; ___ students mentored by me.
+\* Corresponding author; <sup>†</sup> Co-first author; ___ students mentored by me.
 
 <div class='paper-box-text' markdown="1">
 
