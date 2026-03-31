@@ -19,16 +19,9 @@ jobs:
           python-version: '3.11'
       - name: Install scholarly
         run: pip install scholarly
-      - name: Restore previous stats as fallback
+      - name: Ensure fallback files exist
         run: |
           set -euo pipefail
-          if git ls-remote --exit-code --heads origin google-scholar-stats >/dev/null 2>&1; then
-            git fetch --depth=1 origin google-scholar-stats
-            for f in gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json; do
-              git show "origin/google-scholar-stats:$f" > "$f" || true
-            done
-          fi
-
           if [ ! -s gs_data.json ]; then
             cat > gs_data.json <<'EOF'
           {"citedby":0,"publications":{},"publications_by_title":{}}
@@ -117,13 +110,16 @@ jobs:
                   else:
                       raise last_error
           PYEOF
-      - name: Deploy to google-scholar-stats branch
+      - name: Commit stats to main
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan google-scholar-stats
-          git rm -rf .
           git add gs_data.json gs_data_shieldsio.json paper_personal_llm_agents_shieldsio.json
-          git commit -m "Update Google Scholar stats" || echo "No changes to commit"
-          git push -f origin google-scholar-stats
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update Google Scholar stats"
+          git pull --rebase origin main
+          git push origin main
