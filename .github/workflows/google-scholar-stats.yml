@@ -40,7 +40,6 @@ jobs:
           EOF
           fi
       - name: Fetch Google Scholar stats
-        continue-on-error: true
         timeout-minutes: 4
         run: |
           python - <<'PYEOF'
