@@ -23,35 +23,81 @@ jobs:
         run: |
           set -euo pipefail
           if [ ! -s gs_data.json ]; then
-            cat > gs_data.json <<'EOF'
+            cat > gs_data.json <<'EOF_JSON'
           {"citedby":0,"publications":{},"publications_by_title":{}}
-          EOF
+          EOF_JSON
           fi
 
           if [ ! -s gs_data_shieldsio.json ]; then
-            cat > gs_data_shieldsio.json <<'EOF'
+            cat > gs_data_shieldsio.json <<'EOF_JSON'
           {"schemaVersion":1,"label":"citations","message":"0","color":"9cf","namedLogo":"Google Scholar"}
-          EOF
+          EOF_JSON
           fi
 
           if [ ! -s paper_personal_llm_agents_shieldsio.json ]; then
-            cat > paper_personal_llm_agents_shieldsio.json <<'EOF'
+            cat > paper_personal_llm_agents_shieldsio.json <<'EOF_JSON'
           {"schemaVersion":1,"label":"citations","message":"0","color":"9cf","namedLogo":"Google Scholar"}
-          EOF
+          EOF_JSON
           fi
       - name: Fetch Google Scholar stats
         timeout-minutes: 10
+        continue-on-error: true
         run: |
           python - <<'PYEOF'
           import json
           import time
+          import signal
           from scholarly import scholarly
+
+          AUTHOR_ID = 'ApKD824AAAAJ'
+          TARGET_TITLE = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
+
+          class AttemptTimeout(Exception):
+              pass
+
+          def _timeout_handler(signum, frame):
+              raise AttemptTimeout("scholar fetch timed out")
+
+          signal.signal(signal.SIGALRM, _timeout_handler)
+
+          def write_outputs(total, publications_by_title, publications):
+              gs_data = {
+                  'citedby': total,
+                  'publications': publications,
+                  'publications_by_title': publications_by_title,
+              }
+              with open('gs_data.json', 'w') as f:
+                  json.dump(gs_data, f)
+
+              shieldsio = {
+                  "schemaVersion": 1,
+                  "label": "citations",
+                  "message": str(total),
+                  "color": "9cf",
+                  "namedLogo": "Google Scholar",
+              }
+              with open('gs_data_shieldsio.json', 'w') as f:
+                  json.dump(shieldsio, f)
+
+              target_citations = publications_by_title.get(TARGET_TITLE, {}).get('num_citations', 0)
+              paper_shieldsio = {
+                  "schemaVersion": 1,
+                  "label": "citations",
+                  "message": str(target_citations),
+                  "color": "9cf",
+                  "namedLogo": "Google Scholar",
+              }
+              with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
+                  json.dump(paper_shieldsio, f)
 
           last_error = None
           for attempt in range(1, 4):
               try:
-                  author = scholarly.search_author_id('ApKD824AAAAJ')
+                  # Hard timeout per attempt to avoid hanging the whole workflow.
+                  signal.alarm(120)
+                  author = scholarly.search_author_id(AUTHOR_ID)
                   author = scholarly.fill(author)
+                  signal.alarm(0)
 
                   total = author.get('citedby', 0)
 
@@ -65,51 +111,24 @@ jobs:
                       if title:
                           publications_by_title[title] = {
                               'num_citations': citations,
-                              'author_pub_id': pid
+                              'author_pub_id': pid,
                           }
 
-                  gs_data = {
-                      'citedby': total,
-                      'publications': publications,
-                      'publications_by_title': publications_by_title
-                  }
-
-                  with open('gs_data.json', 'w') as f:
-                      json.dump(gs_data, f)
-
-                  shieldsio = {
-                      "schemaVersion": 1,
-                      "label": "citations",
-                      "message": str(total),
-                      "color": "9cf",
-                      "namedLogo": "Google Scholar"
-                  }
-                  with open('gs_data_shieldsio.json', 'w') as f:
-                      json.dump(shieldsio, f)
-
-                  target_title = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
-                  target_citations = publications_by_title.get(target_title, {}).get('num_citations', 0)
-                  personal_llm_agents_shieldsio = {
-                      "schemaVersion": 1,
-                      "label": "citations",
-                      "message": str(target_citations),
-                      "color": "9cf",
-                      "namedLogo": "Google Scholar"
-                  }
-                  with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
-                      json.dump(personal_llm_agents_shieldsio, f)
-
+                  write_outputs(total, publications_by_title, publications)
                   print(f"Total citations: {total}")
                   break
               except Exception as exc:
+                  signal.alarm(0)
                   last_error = exc
                   print(f"Attempt {attempt}/3 failed: {exc}")
                   if attempt < 3:
-                      time.sleep(15 * attempt)
-                  else:
-                      raise last_error
+                      time.sleep(12 * attempt)
+          else:
+              print(f"All attempts failed. Keeping previous badge data. Last error: {last_error}")
+              raise SystemExit(1)
           PYEOF
       - name: Commit stats to main
+        if: ${{ always() }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
