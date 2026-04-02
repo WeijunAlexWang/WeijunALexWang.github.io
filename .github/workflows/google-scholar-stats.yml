@@ -41,7 +41,6 @@ jobs:
           fi
       - name: Fetch Google Scholar stats
         timeout-minutes: 10
-        continue-on-error: true
         run: |
           python - <<'PYEOF'
           import json
@@ -51,6 +50,9 @@ jobs:
 
           AUTHOR_ID = 'ApKD824AAAAJ'
           TARGET_TITLE = "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security".lower()
+          GS_DATA_PATH = 'gs_data.json'
+          GS_BADGE_PATH = 'gs_data_shieldsio.json'
+          PAPER_BADGE_PATH = 'paper_personal_llm_agents_shieldsio.json'
 
           class AttemptTimeout(Exception):
               pass
@@ -60,13 +62,20 @@ jobs:
 
           signal.signal(signal.SIGALRM, _timeout_handler)
 
+          def load_existing_data():
+              try:
+                  with open(GS_DATA_PATH, 'r') as f:
+                      return json.load(f)
+              except FileNotFoundError:
+                  return {}
+
           def write_outputs(total, publications_by_title, publications):
               gs_data = {
                   'citedby': total,
                   'publications': publications,
                   'publications_by_title': publications_by_title,
               }
-              with open('gs_data.json', 'w') as f:
+              with open(GS_DATA_PATH, 'w') as f:
                   json.dump(gs_data, f)
 
               shieldsio = {
@@ -76,7 +85,7 @@ jobs:
                   "color": "9cf",
                   "namedLogo": "Google Scholar",
               }
-              with open('gs_data_shieldsio.json', 'w') as f:
+              with open(GS_BADGE_PATH, 'w') as f:
                   json.dump(shieldsio, f)
 
               target_citations = publications_by_title.get(TARGET_TITLE, {}).get('num_citations', 0)
@@ -87,35 +96,59 @@ jobs:
                   "color": "9cf",
                   "namedLogo": "Google Scholar",
               }
-              with open('paper_personal_llm_agents_shieldsio.json', 'w') as f:
+              with open(PAPER_BADGE_PATH, 'w') as f:
                   json.dump(paper_shieldsio, f)
+
+          def fetch_author():
+              author = scholarly.search_author_id(AUTHOR_ID)
+              return scholarly.fill(author)
+
+          def extract_publications(author, fallback_data):
+              publications = {}
+              publications_by_title = {}
+              for pub in author.get('publications', []):
+                  pid = pub.get('author_pub_id', '')
+                  citations = pub.get('num_citations', 0)
+                  publications[pid] = {'num_citations': citations}
+                  title = pub.get('bib', {}).get('title', '').strip().lower()
+                  if title:
+                      publications_by_title[title] = {
+                          'num_citations': citations,
+                          'author_pub_id': pid,
+                      }
+
+              if publications and publications_by_title:
+                  return publications, publications_by_title, False
+
+              return (
+                  fallback_data.get('publications', {}),
+                  fallback_data.get('publications_by_title', {}),
+                  True,
+              )
+
+          existing_data = load_existing_data()
 
           last_error = None
           for attempt in range(1, 4):
               try:
                   # Hard timeout per attempt to avoid hanging the whole workflow.
-                  signal.alarm(120)
-                  author = scholarly.search_author_id(AUTHOR_ID)
-                  author = scholarly.fill(author)
+                  signal.alarm(150)
+                  author = fetch_author()
                   signal.alarm(0)
 
                   total = author.get('citedby', 0)
+                  if not total:
+                      raise RuntimeError("scholar returned an empty citedby value")
 
-                  publications = {}
-                  publications_by_title = {}
-                  for pub in author.get('publications', []):
-                      pid = pub.get('author_pub_id', '')
-                      citations = pub.get('num_citations', 0)
-                      publications[pid] = {'num_citations': citations}
-                      title = pub.get('bib', {}).get('title', '').strip().lower()
-                      if title:
-                          publications_by_title[title] = {
-                              'num_citations': citations,
-                              'author_pub_id': pid,
-                          }
+                  publications, publications_by_title, used_fallback_publications = extract_publications(
+                      author,
+                      existing_data,
+                  )
 
                   write_outputs(total, publications_by_title, publications)
                   print(f"Total citations: {total}")
+                  if used_fallback_publications:
+                      print("Publication list unavailable; preserved previous per-paper citation data.")
                   break
               except Exception as exc:
                   signal.alarm(0)
@@ -124,11 +157,10 @@ jobs:
                   if attempt < 3:
                       time.sleep(12 * attempt)
           else:
-              print(f"All attempts failed. Keeping previous badge data. Last error: {last_error}")
+              print(f"All attempts failed. Kept previous Scholar data unchanged. Last error: {last_error}")
               raise SystemExit(1)
           PYEOF
       - name: Commit stats to main
-        if: ${{ always() }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
