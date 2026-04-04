@@ -41,12 +41,9 @@ jobs:
           fi
       - name: Fetch Google Scholar stats
         timeout-minutes: 10
-        env:
-          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
         run: |
           python - <<'PYEOF'
           import json
-          import os
           import urllib.parse
           import urllib.request
           import time
@@ -58,7 +55,7 @@ jobs:
           GS_DATA_PATH = 'gs_data.json'
           GS_BADGE_PATH = 'gs_data_shieldsio.json'
           PAPER_BADGE_PATH = 'paper_personal_llm_agents_shieldsio.json'
-          SERPAPI_API_KEY = os.getenv('SERPAPI_API_KEY', '').strip()
+          SERPAPI_API_KEY = '5Z9aQpvXj6VJdV3uC4pEGXom'
 
           class AttemptTimeout(Exception):
               pass
