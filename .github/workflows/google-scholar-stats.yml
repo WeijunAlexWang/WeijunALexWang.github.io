@@ -41,9 +41,14 @@ jobs:
           fi
       - name: Fetch Google Scholar stats
         timeout-minutes: 10
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
         run: |
           python - <<'PYEOF'
           import json
+          import os
+          import urllib.parse
+          import urllib.request
           import time
           import signal
           from scholarly import scholarly
@@ -53,6 +58,7 @@ jobs:
           GS_DATA_PATH = 'gs_data.json'
           GS_BADGE_PATH = 'gs_data_shieldsio.json'
           PAPER_BADGE_PATH = 'paper_personal_llm_agents_shieldsio.json'
+          SERPAPI_API_KEY = os.getenv('SERPAPI_API_KEY', '').strip()
 
           class AttemptTimeout(Exception):
               pass
@@ -103,6 +109,21 @@ jobs:
               author = scholarly.search_author_id(AUTHOR_ID)
               return scholarly.fill(author)
 
+          def fetch_author_serpapi():
+              params = {
+                  'engine': 'google_scholar_author',
+                  'author_id': AUTHOR_ID,
+                  'hl': 'en',
+                  'num': '100',
+                  'api_key': SERPAPI_API_KEY,
+              }
+              url = 'https://serpapi.com/search.json?' + urllib.parse.urlencode(params)
+              with urllib.request.urlopen(url, timeout=45) as response:
+                  payload = json.loads(response.read().decode('utf-8'))
+              if payload.get('error'):
+                  raise RuntimeError(f"SerpApi error: {payload['error']}")
+              return payload
+
           def extract_publications(author, fallback_data):
               publications = {}
               publications_by_title = {}
@@ -126,24 +147,93 @@ jobs:
                   True,
               )
 
+          def extract_from_serpapi(payload, fallback_data):
+              cited_by = payload.get('cited_by', {})
+              total = None
+              for row in cited_by.get('table', []):
+                  citations = row.get('citations', {})
+                  all_value = citations.get('all')
+                  if all_value is not None:
+                      total = int(all_value)
+                      break
+
+              publications = {}
+              publications_by_title = {}
+              for pub in payload.get('articles', []):
+                  pid = pub.get('citation_id') or pub.get('author_pub_id') or pub.get('title', '')
+                  cited = pub.get('cited_by', {})
+                  if isinstance(cited, dict):
+                      citations = int(cited.get('value', 0) or 0)
+                  else:
+                      citations = int(cited or 0)
+                  publications[pid] = {'num_citations': citations}
+
+                  title = str(pub.get('title', '')).strip().lower()
+                  if title:
+                      publications_by_title[title] = {
+                          'num_citations': citations,
+                          'author_pub_id': pid,
+                      }
+
+              if publications and publications_by_title:
+                  return total, publications, publications_by_title, False
+              return (
+                  total,
+                  fallback_data.get('publications', {}),
+                  fallback_data.get('publications_by_title', {}),
+                  True,
+              )
+
           existing_data = load_existing_data()
 
           last_error = None
           for attempt in range(1, 4):
               try:
-                  # Hard timeout per attempt to avoid hanging the whole workflow.
-                  signal.alarm(150)
-                  author = fetch_author()
-                  signal.alarm(0)
+                  total = 0
+                  publications = {}
+                  publications_by_title = {}
+                  used_fallback_publications = False
 
-                  total = author.get('citedby', 0)
-                  if not total:
-                      raise RuntimeError("scholar returned an empty citedby value")
+                  if SERPAPI_API_KEY:
+                      try:
+                          payload = fetch_author_serpapi()
+                          total, publications, publications_by_title, used_fallback_publications = extract_from_serpapi(
+                              payload,
+                              existing_data,
+                          )
+                          if not total:
+                              raise RuntimeError("SerpApi returned an empty citedby value")
+                          print("Fetched via SerpApi.")
+                      except Exception as serpapi_exc:
+                          print(f"SerpApi failed, fallback to scholarly: {serpapi_exc}")
+                          signal.alarm(150)
+                          author = fetch_author()
+                          signal.alarm(0)
 
-                  publications, publications_by_title, used_fallback_publications = extract_publications(
-                      author,
-                      existing_data,
-                  )
+                          total = author.get('citedby', 0)
+                          if not total:
+                              raise RuntimeError("scholar returned an empty citedby value")
+
+                          publications, publications_by_title, used_fallback_publications = extract_publications(
+                              author,
+                              existing_data,
+                          )
+                          print("Fetched via scholarly fallback.")
+                  else:
+                      # Hard timeout per attempt to avoid hanging the whole workflow.
+                      signal.alarm(150)
+                      author = fetch_author()
+                      signal.alarm(0)
+
+                      total = author.get('citedby', 0)
+                      if not total:
+                          raise RuntimeError("scholar returned an empty citedby value")
+
+                      publications, publications_by_title, used_fallback_publications = extract_publications(
+                          author,
+                          existing_data,
+                      )
+                      print("Fetched via scholarly.")
 
                   write_outputs(total, publications_by_title, publications)
                   print(f"Total citations: {total}")
