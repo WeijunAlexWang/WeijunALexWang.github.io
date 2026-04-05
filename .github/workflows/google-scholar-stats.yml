@@ -55,7 +55,7 @@ jobs:
           GS_DATA_PATH = 'gs_data.json'
           GS_BADGE_PATH = 'gs_data_shieldsio.json'
           PAPER_BADGE_PATH = 'paper_personal_llm_agents_shieldsio.json'
-          SERPAPI_API_KEY = '5Z9aQpvXj6VJdV3uC4pEGXom'
+          SERPAPI_API_KEY = '5660de154fa6f6273783491fa0926aee3b52b932187f968921f965b4cf898455'
 
           class AttemptTimeout(Exception):
               pass
