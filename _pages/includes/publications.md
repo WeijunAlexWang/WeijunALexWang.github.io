@@ -25,11 +25,6 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 
 
-- <a href="https://arxiv.org/abs/2509.24387"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2025</span></a>. AdaNav: Adaptive Reasoning with Uncertainty for Vision-Language Navigation.<br>
-  Xin Ding, Jianyu Wei, Yifan Yang, Shiqi Jiang, Qianxi Zhang, Hao Wu, Fucheng Jia, <u>Liang Mi</u>, Yuxuan Yan, **Weijun Wang**, Yunxin Liu, Zhibo Chen, Ting Cao.<br>
-
-
-
 - <a href="https://arxiv.org/pdf/2505.14043"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2025</span></a>. Selective Structured State Space for Multispectral-fused Small Target Detection.<br>
   <u>Qianqian Zhang</u>, **Weijun Wang**, Zihan Wang, Li Zhou, Hao Zhao, Junshe An, Yunxing Liu.<br>
 
@@ -160,6 +155,14 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
   Xin Ding, Jianyu Wei, Fucheng Jia, <u>Liang Mi</u>, <u>Ruofei Ju</u>, <u>Xianye Wang</u>, Yikai Zheng, Ziming Zhang, **Weijun Wang**, Shiqi Jiang, Yunxin Liu, Ting Cao, ACM MobiCom 2025.<br>
 
 
+- <span class="badge"><i class="fas fa-users"></i> ICML</span> (<span class="ccf-a">CCF-A</span>). AVI-Bench: Toward Human-like Audio-Visual Intelligence of Omni-MLLMs.<br>
+  Yaoting Wang, Ziyi Zhang, Wenming Tu, Shaoxuan Xu, Wenjie Du, Cheng Liang, **Weijun Wang**, Yuanchao Li, Guangyao Li, Hao Fei, Yuanchun Li, Henghui Ding, Yunxin Liu, ICML 2026.<br>
+
+
+
+- <a href="https://arxiv.org/abs/2509.24387"><span class="badge"><i class="fas fa-users"></i> ICML</span></a> (<span class="ccf-a">CCF-A</span>). AdaNav: Adaptive Reasoning with Uncertainty for Vision-Language Navigation.<br>
+  Xin Ding, Jianyu Wei, Yifan Yang, Shiqi Jiang, Qianxi Zhang, Hao Wu, Fucheng Jia, <u>Liang Mi</u>, Yuxuan Yan, **Weijun Wang**, Yunxin Liu, Zhibo Chen, Ting Cao, ICML 2026.<br>
+
 
 - <a href="https://arxiv.org/pdf/2308.15030v4"><span class="badge"><i class="fas fa-users"></i> ACL</span></a> (<span class="ccf-a">CCF-A</span>). SwapMoE: Serving Off-the-shelf MoE-based Large Language Models with Tunable Memory Budget.<br>
   Rui Kong, Yuanchun Li, Qingtian Feng, **Weijun Wang**, Xiaozhou Ye, Ye Ouyang, Linghe Kong, Yunxin Liu, ACL ACL 2024.<br>
@@ -169,9 +172,14 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
   **Weijun Wang**, Haipeng Dai, Chao Dong, Fu Xiao, Xiao Chen, Guihai Chen, IEEE SECON 2019.<br>
 
 
+- <span class="badge"><i class="fas fa-users"></i> IWQoS</span> (<span class="ccf-b">CCF-B</span>). StreamDuet: Bandwidth Efficient Multi-Drone Video Analytics with Iterative Streaming.<br>
+ <u>Haihan Zhang<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, Haipeng Dai, Ruiben Zhou, <u>Liang Mi</u>, Mi Zhou, Guihai Chen, IEEE/ACM IWQoS 2026.<br>
+
+
 
 - <span class="badge"><i class="fas fa-users"></i> IWQoS</span> (<span class="ccf-b">CCF-B</span>). WiPlan: Waypoint Planning for UAVs with Multiple Pan-Zoom Adjustable Cameras.<br>
   <u>Yanlong Huang<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, Tingting Yuan, Xiaoming Fu, IEEE/ACM IWQoS 2025.<br>
+
 
 
 

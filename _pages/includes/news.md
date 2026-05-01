@@ -1,4 +1,5 @@
 # 🔥 News
+- *05/2026*, Three papers were accepted: AVI-Bench and AdaNav to ICML'26, and StreamDuet to IWQoS'26. Congratulations to all collaborators!
 - *03/2026*, Our MoE edge inference optimization system SMoE was accepted by ISCA'26. Congratulations to Guoying!
 - *02/2026*, Vec-LUT was accepted by MobiSys'26. Congratulations to [Xiangyu](https://xxxxyu.github.io/academic/)!
 - *01/2026*, CompViT was accepted by Springer IJCV. This is our first attempt to explore video analytics in the compressed domain.
