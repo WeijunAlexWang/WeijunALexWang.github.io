@@ -19,12 +19,6 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
   Xiangyu Li, Huaizhi Tang, Xin Ding, **Weijun Wang**, Ting Cao, Yunxin Liu.<br>
 
 
-
-- <a href="http://arxiv.org/abs/2602.09725"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. Efficient Remote Prefix Fetching with GPU-native Media ASICs.<br>
-  <u>Liang Mi<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, Jinghan Chen, Ting Cao, Haipeng Dai, Yunxin Liu.<br>
-
-
-
 - <a href="https://arxiv.org/pdf/2505.14043"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2025</span></a>. Selective Structured State Space for Multispectral-fused Small Target Detection.<br>
   <u>Qianqian Zhang</u>, **Weijun Wang**, Zihan Wang, Li Zhou, Hao Zhao, Junshe An, Yunxing Liu.<br>
 
@@ -118,6 +112,9 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 ## Conference
 
+- <a href="http://arxiv.org/abs/2602.09725"><span class="badge"><i class="fas fa-users"></i> SIGCOMM</span></a> (<span class="ccf-a">CCF-A</span>). Efficient Remote KV Cache Reuse with GPU-native Video Codec. <br>
+<u>Liang Mi<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, <u>Jinghan Chen</u>, Ting Cao, Haipeng Dai, Yunxin Liu, ACM SIGCOMM 2026.<br>
+
 - <a href="https://arxiv.org/pdf/2407.16990"><span class="badge"><i class="fas fa-users"></i> NSDI</span></a> (<span class="ccf-a">CCF-A</span>). Region-based Content Enhancement for Efficient Video Analytics at the Edge (<span class="acceptance-rate">83/666=12.5%</span>).<br>
   **Weijun Wang**, <u>Liang Mi</u>, <u>Shaowei Cen</u>, Haipeng Dai, Yuanchun Li, Xiaoming Fu, Yunxin Liu, USENIX NSDI 2025.<br>
 
@@ -156,7 +153,7 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 
 - <span class="badge"><i class="fas fa-users"></i> ICML</span> (<span class="ccf-a">CCF-A</span>). AVI-Bench: Toward Human-like Audio-Visual Intelligence of Omni-MLLMs.<br>
-  Yaoting Wang, Ziyi Zhang, Wenming Tu, Shaoxuan Xu, Wenjie Du, Cheng Liang, **Weijun Wang**, Yuanchao Li, Guangyao Li, Hao Fei, Yuanchun Li, Henghui Ding, Yunxin Liu, ICML 2026.<br>
+  <u>Yaoting Wang</u>, Ziyi Zhang, Wenming Tu, Shaoxuan Xu, Wenjie Du, Cheng Liang, **Weijun Wang**, Yuanchao Li, Guangyao Li, Hao Fei, Yuanchun Li, Henghui Ding, Yunxin Liu, ICML 2026.<br>
 
 
 
