@@ -15,7 +15,7 @@ I also work very closely with [Prof. Ting Cao](https://tingcao952.github.io/), [
 
 My current research interest is emboided AI, especially memory/reasoning-powered VLA model and efficient VLA inference/training system.
 
-My research has been published in top-tier venues including NSDI, EuroSys, ISCA, MobiSys, INFOCOM, ICML, and ACL, and journals including TON, TMC, TC, and IJCV. I have served on the program committees of ICDCS, DASFAA, and ICPADS. I am a member of ACM and IEEE.
+My research has been published in top-tier venues including SIGCOMM, NSDI, EuroSys, ISCA, MobiSys, INFOCOM, ICML, and ACL, and journals including TON, TMC, TC, and IJCV. I have served on the program committees of ICDCS, DASFAA, and ICPADS. I am a member of ACM and IEEE.
 
 {% include_relative includes/news.md %}
 
