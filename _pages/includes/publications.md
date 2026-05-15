@@ -10,6 +10,11 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 ## Preprint
 
+- <a href="https://arxiv.org/abs/2605.13375"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. GRIP-VLM: Group-Relative Importance Pruning for Efficient Vision-Language Models.<br>
+  Mingzhe Huang, **Weijun Wang\***, Xin Ding, Liang Mi, Hao Wen, Yuanchun Li, Lichen Pang, Shansong Yang, Yunxin Liu, Ting Cao.<br>
+
+
+
 - <a href="https://arxiv.org/abs/2603.19054"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. Em-Garde: A Propose-Match Framework for Proactive Streaming Video Understanding.<br>
   Yikai Zheng, Xin Ding, Yifan Yang, Shiqi Jiang, Hao Wu, Qianxi Zhang, **Weijun Wang**, Ting Cao, Yunxin Liu.<br>
 
