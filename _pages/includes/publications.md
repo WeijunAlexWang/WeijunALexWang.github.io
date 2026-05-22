@@ -15,6 +15,11 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 
 
+- <a href="https://arxiv.org/abs/2605.10332"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents.<br>
+  Ruofei Ju, Xinrui Wang, Xin Ding, Yifan Yang, Hao Wu, Shiqi Jiang, Qianxi Zhang, Hao Wen, Xiangyu Li, **Weijun Wang**, Kun Li, Yunxin Liu, Haipeng Dai, Wei Wang, Ting Cao.<br>
+
+
+
 - <a href="https://arxiv.org/abs/2603.19054"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. Em-Garde: A Propose-Match Framework for Proactive Streaming Video Understanding.<br>
   Yikai Zheng, Xin Ding, Yifan Yang, Shiqi Jiang, Hao Wu, Qianxi Zhang, **Weijun Wang**, Ting Cao, Yunxin Liu.<br>
 
