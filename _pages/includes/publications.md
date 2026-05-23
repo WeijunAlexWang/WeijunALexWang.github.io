@@ -195,7 +195,7 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 
 
-- <a href="https://arxiv.org/abs/2512.06443"><span class="badge"><i class="fas fa-users"></i> MobiSys</span></a> (<span class="ccf-b">CCF-B</span>). Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices.<br>
+- <a href="https://arxiv.org/abs/2512.06443"><span class="badge"><i class="fas fa-users"></i> MobiSys</span></a> (<span class="ccf-b">CCF-B</span>). Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices (<span class="acceptance-rate">Featured Paper for the On-Device AI session</span>).<br>
   Xiangyu Li<sup>†</sup>, Chengyu Yin<sup>†</sup>, **Weijun Wang**, Jianyu Wei, Ting Cao, Yunxin Liu, ACM MobiSys 2026.<br>
 
 
