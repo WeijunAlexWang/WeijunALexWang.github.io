@@ -2,6 +2,7 @@
 
 ## Industrial Deployment
 
+- **KVCodec System is being deployed in the Doubao product of ByteDance Inc.** SIGCOMM'26 work is being validated and deployed on the ByteDance LLM HPC platform and the Huawei MindSpore platform.
 - **LoRA LMM System is being deployed in the production of AsiaInfo Technologies (China) Inc.** EuroSys 2025 work is being applied in the AsiaInfo AISWare AI2 Edge Intelligence product.
 - **Video Analytics algorithm applied in the production of AsiaInfo Technologies (China) Inc.** NSDI 2025 work has been applied in the AsiaInfo AISWare AI2 Edge Intelligence product, which has achieved a total order value of *RMB 3 million* within nine months.
 - **Mobile video streaming algorithm applied in the mobile service core of Huawei.** INFOCOM 2022 work has been applied in the HUAWEI Mobile Service HMS 6.x platform, which serves HUAWEI mobile devices.
