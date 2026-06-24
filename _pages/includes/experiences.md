@@ -16,7 +16,7 @@
 ## Supervision
 
 **Current Members (Interns @ THU)**
-- Liang Mi, from Nanjing University, 2023–, on LLM Serving System, co-advised with Prof. Yunxin Liu. \[TON, EuroSys\]
+- Liang Mi, from Nanjing University, 2023–, on LLM Serving System, co-advised with Prof. Yunxin Liu. \[SIGCOMM, EuroSys\]
 - Ruofei Ju, from Nanjing University, 2025–, on Embodied AI, co-advised with Prof. Ting Cao. \[MobiCom\]
 
 **Alumni**
