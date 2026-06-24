@@ -1,10 +1,10 @@
 # 🔥 News
-- *06/2026*, One paper was accepted to ECCV'26. Congratulations to [Yikai](https://github.com/YikaiZheng)!
+- *06/2026*, One paper was accepted to ECCV'26. Congratulations to [Yikai](https://github.com/YikaiZheng)! Vec-LUT was awarded by <span class="award">Best Student Paper Award</span> of MobiSys'26. Congratulations to [Xiangyu](https://xxxxyu.github.io/academic/)!
 - *05/2026*, Four papers were accepted: KVCodec to SIGCOMM'26, AVI-Bench and AdaNav to ICML'26, and StreamDuet to IWQoS'26. Congratulations to all collaborators!
 - *03/2026*, Our MoE edge inference optimization system SMoE was accepted by ISCA'26. Congratulations to Guoying!
 - *02/2026*, Vec-LUT was accepted by MobiSys'26. Congratulations to [Xiangyu](https://xxxxyu.github.io/academic/)!
 - *01/2026*, CompViT was accepted by Springer IJCV. This is our first attempt to explore video analytics in the compressed domain.
-- *12/2025*, Our paper "Efficient LLM Edge Collaboration Deployment with LoRA" won the **Best Student Paper Award** at ICPADS'25! Thanks Xin for carrying us and congratulations to all collaborators. 🎉
+- *12/2025*, Our paper "Efficient LLM Edge Collaboration Deployment with LoRA" won the <span class="award">Best Student Paper Award</span> at ICPADS'25! Thanks Xin for carrying us and congratulations to all collaborators. 🎉
 - *09/2025*, BiSwift journal version was accepted by ACM/IEEE TON. Congratulations to Jinghan for her first top-journal paper!
 - *05/2025*, SwapMoE journal version was accepted by IEEE TC. Congratulations to [Rui](https://rui-kong.github.io/)!
 - *04/2025*, WiPlan was accepted by IEEE/ACM IWQoS. Congratulations to Yanlong!

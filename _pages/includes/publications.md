@@ -191,7 +191,7 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 - <a href="https://arxiv.org/abs/2603.19054"><span class="badge"><i class="fas fa-file-alt"></i> ECCV</span></a>(<span class="ccf-b">CCF-B</span>). Em-Garde: A Propose-Match Framework for Proactive Streaming Video Understanding.<br>
 Yikai Zheng, Xin Ding, Yifan Yang, Shiqi Jiang, Hao Wu, Qianxi Zhang, **Weijun Wang**, Ting Cao, Yunxin Liu, ECCV 2026<br>
 
-- <a href="https://arxiv.org/abs/2512.06443"><span class="badge"><i class="fas fa-users"></i> MobiSys</span></a> (<span class="ccf-b">CCF-B</span>). Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices (<span class="acceptance-rate">Featured Paper for the On-Device AI session</span>).<br>
+- <a href="https://arxiv.org/abs/2512.06443"><span class="badge"><i class="fas fa-users"></i> MobiSys</span></a> (<span class="ccf-b">CCF-B</span>). Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices <span class="award">Best Paper Runner-UP Award</span><br>
   Xiangyu Li<sup>†</sup>, Chengyu Yin<sup>†</sup>, **Weijun Wang**, Jianyu Wei, Ting Cao, Yunxin Liu, ACM MobiSys 2026.<br>
 
 
