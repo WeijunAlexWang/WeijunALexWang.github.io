@@ -1,5 +1,5 @@
 # 📖 Education
 
-- **Ph.D.**, Computer Science, University of Göttingen
-- **Ph.D.**, Computer Science, Nanjing University
-- **B.Eng.**, Software Engineering, Nanjing University of Posts and Telecommunications
+- **Ph.D.**, University of Göttingen
+- **Ph.D.**, Nanjing University
+- **B.Eng.**, Nanjing University of Posts and Telecommunications
