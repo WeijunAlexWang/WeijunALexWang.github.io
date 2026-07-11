@@ -42,78 +42,6 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
   Yuanchun Li, Hao Wen, **Weijun Wang**, Xiangyu Li, Yizhen Yuan, Guohong Liu, Jiacheng Liu, Wenxing Xu, Xiang Wang, Yi Sun, Rui Kong, Yile Wang, Hanfei Geng, Jian Luan, Xuefeng Jin, Zilong Ye, Guanjing Xiong, Fan Zhang, Xiang Li, Mengwei Xu, Zhijun Li, Peng Li, Yang Liu, Ya-Qin Zhang, Yunxin Liu.<br>
 
 
-
-
-## Journal
-
-- <span class="badge"><i class="fas fa-book"></i> IJCV</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). CompViT: Real-Time Compressed Video Action Recognition with Asymmetric Transformer Networks.<br>
-  Tao Wu, <u>Shaowei Cen</u>, <u>Liang Mi</u>, **Weijun Wang**, Haipeng Dai, Limin Wang, Springer IJCV 2026.<br>
-
-
-
-- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TON18PANDA.pdf"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Placement of Unmanned Aerial Vehicles Achieving 3D Directional Coverage.<br>
-  **Weijun Wang**, Haipeng Dai, Chao Dong, Xiao Cheng, Xiaoyu Wang, Panlong Yang, Guihai Chen, Wanchun Dou, IEEE/ACM TON 2020.<br>
-
-
-
-- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TON2023_VSiM.pdf"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Joint Optimization of QoE and Fairness for Adaptive Video Streaming in Heterogeneous Mobile Environments.<br>
-  Yali Yuan<sup>†</sup>, **Weijun Wang<sup>†</sup>**, <u>Yuhan Wang</u>, Sripriya S. Adhatarao, Bangbang Ren, Kai Zheng, Xiaoming Fu, IEEE/ACM TON 2023.<br>
-
-
-
-- <span class="badge"><i class="fas fa-book"></i> TON</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Bi-level Bandwidth Coordination for Multiple Video Inference at the Edge.<br>
-  Haipeng Dai, Jinghan Chen, <u>Liang Mi</u>, **Weijun Wang\***, Yuanchun Li, Tingting Yuan, <u>Lin Sun</u>, Junlong Chen, Yuben Qu, Yunxin Liu, Xiaoming Fu, Guihai Chen, IEEE/ACM TON 2025.<br>
-
-
-
-- <a href="https://www.researchgate.net/publication/379527692_Accelerated_Neural_Enhancement_for_Video_Analytics_With_Video_Quality_Adaptation#fullTextFileContent"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Accelerated Neural Enhancement for Video Analytics with Video Quality Adaptation.<br>
-  <u>Liang Mi<sup>†</sup></u>, Tingting Yuan<sup>†</sup>, **Weijun Wang\***, Haipeng Dai, <u>Lin Sun</u>, Jiaqi Zheng, Guihai Chen, Xiaoming Fu, IEEE/ACM TON 2024.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TON</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). SAFE: Service Availability via Failure Elimination Through VNF Scaling.<br>
-  Rui Xia, Haipeng Dai, Jiaqi Zheng, Rong Gu, Xiaoyu Wang, **Weijun Wang**, Guihai Chen, IEEE/ACM TON 2023.<br>
-
-
-
-
-- <a href="https://doi.org/10.1109/TNET.2021.3105959"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Optimal Deployment of SRv6 to Enable Network Interconnection Service.<br>
-  Bangbang Ren, Yali Yuan, Deke Guo, Guoming Tang, **Weijun Wang**, Xiaoming Fu, IEEE/ACM TON 2021.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Deployment of Unmanned Aerial Vehicles for Anisotropic Monitoring Tasks.<br>
-  **Weijun Wang**, Haipeng Dai, Chao Dong, Fu Xiao, Jiaqi Zheng, Xiao Cheng, Guihai Chen, Xiaoming Fu, IEEE TMC 2022.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Joint Deployment of Truck-drone Systems for Camera-based Object Monitoring.<br>
-  <u>Lihao Wang<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, Haipeng Dai, Yuben Qu, Jiaqi Zheng, Rong Gu, Guihai Chen, Xiaoming Fu, IEEE TMC 2024.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Optimizing Monitoring Utility of Unmanned Aerial Vehicles Considering Adverse Effects.<br>
-  Haihan Zhang, Haipeng Dai, Yu Qiu, Enze Yu, Ruiben Zhou, **Weijun Wang**, <u>Jingwu Wang</u>, Guihai Chen, IEEE TMC 2025.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Placing Wireless Chargers with Multiple Antennas.<br>
-  Haipeng Dai, Yikang Zhang, **Weijun Wang**, Rong Gu, Yuben Qu, Chi Lin, Lijie Xu, Jiaqi Zheng, Wanchun Dou, Guihai Chen, IEEE TMC 2023.<br>
-
-
-
-- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TMC2021.pdf"><span class="badge"><i class="fas fa-book"></i> TMC</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Server Placement for Edge Computing: A Robust Submodular Maximization Approach.<br>
-  Yuben Qu, <u>Lihao Wang</u>, Haipeng Dai, **Weijun Wang**, Chao Dong, Fan Wu, Song Guo, IEEE TMC 2021.<br>
-
-
-
-- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/08714083.pdf"><span class="badge"><i class="fas fa-book"></i> TMC</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Heterogeneous Wireless Charger Placement with Obstacles.<br>
-  Xiaoyu Wang, Haipeng Dai, **Weijun Wang**, Jiaqi Zheng, Guihai Chen, Wanchun Dou, Xiaobing Wu, IEEE TMC 2020.<br>
-
-
-- <span class="badge"><i class="fas fa-book"></i> TC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q2</span>). Serving MoE Models on Resource-constrained Edge Devices via Dynamic Expert Swapping.<br>
-  Rui Kong, Yuanchun Li, **Weijun Wang**, Linghe Kong, Yunxin Liu, IEEE TC 2025.<br>
-
-
-- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/CoTask_WWWJ.pdf"><span class="badge"><i class="fas fa-book"></i> WWWJ</span></a> (<span class="ccf-b">CCF-B</span>). CoTask: Correlation-Aware Task Offloading in Edge Computing.<br>
-  Yuben Qu, Haipeng Dai, <u>Lihao Wang</u>, **Weijun Wang**, Fan Wu, Haisheng Tan, Shaojie Tang, Chao Dong, Springer WWWJ 2022.<br>
-
-
 ## Conference
 
 - <a href="http://arxiv.org/abs/2602.09725"><span class="badge"><i class="fas fa-users"></i> SIGCOMM</span></a> (<span class="ccf-a">CCF-A</span>). Efficient Remote KV Cache Reuse with GPU-native Video Codec. <br>
@@ -236,6 +164,78 @@ Yikai Zheng, Xin Ding, Yifan Yang, Shiqi Jiang, Hao Wu, Qianxi Zhang, **Weijun W
 
 <!-- - <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/EWSN2021.pdf"><span class="badge"><i class="fas fa-users"></i> EWSN</span></a>. A Real-time Social Distance Measurement and Record System for COVID-19.<br>
   **Weijun Wang**, Tingting Yuan, <u>Minghao Han</u>, Meng Li, Han Zhang, <u>Yu Ma</u>, Sripriya Srikant Adhatarao, Xiaoming Fu, EWSN EWSN 2021.<br> -->
+
+
+
+## Journal
+
+- <span class="badge"><i class="fas fa-book"></i> IJCV</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). CompViT: Real-Time Compressed Video Action Recognition with Asymmetric Transformer Networks.<br>
+  Tao Wu, <u>Shaowei Cen</u>, <u>Liang Mi</u>, **Weijun Wang**, Haipeng Dai, Limin Wang, Springer IJCV 2026.<br>
+
+
+
+- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TON18PANDA.pdf"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Placement of Unmanned Aerial Vehicles Achieving 3D Directional Coverage.<br>
+  **Weijun Wang**, Haipeng Dai, Chao Dong, Xiao Cheng, Xiaoyu Wang, Panlong Yang, Guihai Chen, Wanchun Dou, IEEE/ACM TON 2020.<br>
+
+
+
+- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TON2023_VSiM.pdf"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Joint Optimization of QoE and Fairness for Adaptive Video Streaming in Heterogeneous Mobile Environments.<br>
+  Yali Yuan<sup>†</sup>, **Weijun Wang<sup>†</sup>**, <u>Yuhan Wang</u>, Sripriya S. Adhatarao, Bangbang Ren, Kai Zheng, Xiaoming Fu, IEEE/ACM TON 2023.<br>
+
+
+
+- <span class="badge"><i class="fas fa-book"></i> TON</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Bi-level Bandwidth Coordination for Multiple Video Inference at the Edge.<br>
+  Haipeng Dai, Jinghan Chen, <u>Liang Mi</u>, **Weijun Wang\***, Yuanchun Li, Tingting Yuan, <u>Lin Sun</u>, Junlong Chen, Yuben Qu, Yunxin Liu, Xiaoming Fu, Guihai Chen, IEEE/ACM TON 2025.<br>
+
+
+
+- <a href="https://www.researchgate.net/publication/379527692_Accelerated_Neural_Enhancement_for_Video_Analytics_With_Video_Quality_Adaptation#fullTextFileContent"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Accelerated Neural Enhancement for Video Analytics with Video Quality Adaptation.<br>
+  <u>Liang Mi<sup>†</sup></u>, Tingting Yuan<sup>†</sup>, **Weijun Wang\***, Haipeng Dai, <u>Lin Sun</u>, Jiaqi Zheng, Guihai Chen, Xiaoming Fu, IEEE/ACM TON 2024.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TON</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). SAFE: Service Availability via Failure Elimination Through VNF Scaling.<br>
+  Rui Xia, Haipeng Dai, Jiaqi Zheng, Rong Gu, Xiaoyu Wang, **Weijun Wang**, Guihai Chen, IEEE/ACM TON 2023.<br>
+
+
+
+
+- <a href="https://doi.org/10.1109/TNET.2021.3105959"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Optimal Deployment of SRv6 to Enable Network Interconnection Service.<br>
+  Bangbang Ren, Yali Yuan, Deke Guo, Guoming Tang, **Weijun Wang**, Xiaoming Fu, IEEE/ACM TON 2021.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Deployment of Unmanned Aerial Vehicles for Anisotropic Monitoring Tasks.<br>
+  **Weijun Wang**, Haipeng Dai, Chao Dong, Fu Xiao, Jiaqi Zheng, Xiao Cheng, Guihai Chen, Xiaoming Fu, IEEE TMC 2022.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Joint Deployment of Truck-drone Systems for Camera-based Object Monitoring.<br>
+  <u>Lihao Wang<sup>†</sup></u>, **Weijun Wang<sup>†</sup>**, Haipeng Dai, Yuben Qu, Jiaqi Zheng, Rong Gu, Guihai Chen, Xiaoming Fu, IEEE TMC 2024.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Optimizing Monitoring Utility of Unmanned Aerial Vehicles Considering Adverse Effects.<br>
+  Haihan Zhang, Haipeng Dai, Yu Qiu, Enze Yu, Ruiben Zhou, **Weijun Wang**, <u>Jingwu Wang</u>, Guihai Chen, IEEE TMC 2025.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Placing Wireless Chargers with Multiple Antennas.<br>
+  Haipeng Dai, Yikang Zhang, **Weijun Wang**, Rong Gu, Yuben Qu, Chi Lin, Lijie Xu, Jiaqi Zheng, Wanchun Dou, Guihai Chen, IEEE TMC 2023.<br>
+
+
+
+- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/TMC2021.pdf"><span class="badge"><i class="fas fa-book"></i> TMC</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Server Placement for Edge Computing: A Robust Submodular Maximization Approach.<br>
+  Yuben Qu, <u>Lihao Wang</u>, Haipeng Dai, **Weijun Wang**, Chao Dong, Fan Wu, Song Guo, IEEE TMC 2021.<br>
+
+
+
+- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/08714083.pdf"><span class="badge"><i class="fas fa-book"></i> TMC</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Heterogeneous Wireless Charger Placement with Obstacles.<br>
+  Xiaoyu Wang, Haipeng Dai, **Weijun Wang**, Jiaqi Zheng, Guihai Chen, Wanchun Dou, Xiaobing Wu, IEEE TMC 2020.<br>
+
+
+- <span class="badge"><i class="fas fa-book"></i> TC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q2</span>). Serving MoE Models on Resource-constrained Edge Devices via Dynamic Expert Swapping.<br>
+  Rui Kong, Yuanchun Li, **Weijun Wang**, Linghe Kong, Yunxin Liu, IEEE TC 2025.<br>
+
+
+- <a href="https://github.com/WeijunAlexWang/wwj/tree/master/files/CoTask_WWWJ.pdf"><span class="badge"><i class="fas fa-book"></i> WWWJ</span></a> (<span class="ccf-b">CCF-B</span>). CoTask: Correlation-Aware Task Offloading in Edge Computing.<br>
+  Yuben Qu, Haipeng Dai, <u>Lihao Wang</u>, **Weijun Wang**, Fan Wu, Haisheng Tan, Shaojie Tang, Chao Dong, Springer WWWJ 2022.<br>
+
 
 
 </div>
