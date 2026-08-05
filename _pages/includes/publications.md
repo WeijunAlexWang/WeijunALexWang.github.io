@@ -202,6 +202,8 @@ Yikai Zheng, Xin Ding, Yifan Yang, Shiqi Jiang, Hao Wu, Qianxi Zhang, **Weijun W
 - <a href="https://doi.org/10.1109/TNET.2021.3105959"><span class="badge"><i class="fas fa-book"></i> TON</span></a> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Optimal Deployment of SRv6 to Enable Network Interconnection Service.<br>
   Bangbang Ren, Yali Yuan, Deke Guo, Guoming Tang, **Weijun Wang**, Xiaoming Fu, IEEE/ACM TON 2021.<br>
 
+- <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Efficient VLM Inference System with LoRA Adapters at the Edge.<br>
+**Weijun Wang**, Liang Mi, Jinghan Chen, Tianze Yu, Ting Cao, Yuanchun Li, Meng Li, Haipeng Dai, Guihai Chen, Yunxin Liu, IEEE TMC 2026.<br>
 
 - <span class="badge"><i class="fas fa-book"></i> TMC</span> (<span class="ccf-a">CCF-A</span>, <span class="jcr">JCR Q1</span>). Deployment of Unmanned Aerial Vehicles for Anisotropic Monitoring Tasks.<br>
   **Weijun Wang**, Haipeng Dai, Chao Dong, Fu Xiao, Jiaqi Zheng, Xiao Cheng, Guihai Chen, Xiaoming Fu, IEEE TMC 2022.<br>

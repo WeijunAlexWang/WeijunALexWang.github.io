@@ -1,4 +1,5 @@
 # 🔥 News
+- *08/2026*, VaLoRA journal version was accepted by IEEE TMC. Thanks to all collaborators!
 - *06/2026*, One paper was accepted to ECCV'26. Congratulations to [Yikai](https://github.com/YikaiZheng)! Vec-LUT was awarded by <span class="award">Best Paper Award Runner-UP</span> of MobiSys'26. Congratulations to [Xiangyu](https://xxxxyu.github.io/academic/)! 🎉
 - *05/2026*, Four papers were accepted: KVCodec to SIGCOMM'26, AVI-Bench and AdaNav to ICML'26, and StreamDuet to IWQoS'26. Congratulations to all collaborators!
 - *03/2026*, Our MoE edge inference optimization system SMoE was accepted by ISCA'26. Congratulations to Guoying!
