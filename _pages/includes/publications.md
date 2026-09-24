@@ -10,6 +10,10 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 ## Preprint
 
+- <a href="https://arxiv.org/abs/2609.27547"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management.<br>
+  <u>Liang Mi</u>, **Weijun Wang\***, <u>Bowen Gao</u>, <u>Tianze Yu</u>, Zixu Hao, <u>Han Xiao</u>, Xin Ding, Mingzhe Huang, Xin He, Lu Shi, Hao Wu, Haipeng Dai, Guihai Chen, Yunxin Liu, Ting Cao.<br>
+
+
 - <a href="https://arxiv.org/abs/2606.08508"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. ActProbe: Action-Space Probe for Early Failure Detection of Generative Robot Policies.<br>
   Bingjia Huang, Xiangyu Li, Xiang Wang, <u>Liang Mi</u>, Zixu Hao, **Weijun Wang**, Hao Wu, Kun Li, Yunxin Liu, Ting Cao.<br>
 
@@ -21,10 +25,6 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 - <a href="https://arxiv.org/abs/2605.10332"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents.<br>
   Ruofei Ju, Xinrui Wang, Xin Ding, Yifan Yang, Hao Wu, Shiqi Jiang, Qianxi Zhang, Hao Wen, Xiangyu Li, **Weijun Wang**, Kun Li, Yunxin Liu, Haipeng Dai, Wei Wang, Ting Cao.<br>
-
-
-- <a href="https://arxiv.org/abs/2603.14371"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2026</span></a>. OxyGen: Unified KV Cache Management for Vision-Language-Action Models under Multi-Task Parallelism.<br>
-  Xiangyu Li, Huaizhi Tang, Xin Ding, **Weijun Wang**, Ting Cao, Yunxin Liu.<br>
 
 
 - <a href="https://arxiv.org/pdf/2505.14043"><span class="badge"><i class="fas fa-file-alt"></i> arXiv 2025</span></a>. Selective Structured State Space for Multispectral-fused Small Target Detection.<br>
@@ -86,6 +86,10 @@ Complete list: [Google Scholar](https://scholar.google.com/citations?view_op=lis
 
 - <a href="https://dl.acm.org/doi/pdf/10.1145/3680207.3765596"><span class="badge"><i class="fas fa-users"></i> MobiCom</span></a> (<span class="ccf-a">CCF-A</span>).Demo: EdgeMind-OS, A Plug-and-Play Embodied Intelligence System for Real-Time On-Device Deployment.<br>
   Xin Ding, Jianyu Wei, Fucheng Jia, <u>Liang Mi</u>, <u>Ruofei Ju</u>, <u>Xianye Wang</u>, Yikai Zheng, Ziming Zhang, **Weijun Wang**, Shiqi Jiang, Yunxin Liu, Ting Cao, ACM MobiCom 2025.<br>
+
+
+- <span class="badge"><i class="fas fa-users"></i> NeurIPS</span> (<span class="ccf-a">CCF-A</span>). OxyGen: Unified KV Cache Management for Vision-Language-Action Models under Multi-Task Parallelism.<br>
+  Xiangyu Li, Huaizhi Tang, Xin Ding, **Weijun Wang**, Ting Cao, Yunxin Liu, NeurIPS 2026.<br>
 
 
 - <span class="badge"><i class="fas fa-users"></i> ICML</span> (<span class="ccf-a">CCF-A</span>). AVI-Bench: Toward Human-like Audio-Visual Intelligence of Omni-MLLMs.<br>
