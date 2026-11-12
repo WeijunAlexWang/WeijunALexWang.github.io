@@ -9,6 +9,9 @@
 
 ## Talks
 
+- *11.2026*, "Efficient MoE-based Large Model Inference at the Edge". Chinanet 2026 (host: Prof. Xiaoming Fu, Jin Zhao).
+- *10.2026*, "Efficient Inference System: From LLM to Embodied AI". CPNCS 2026 (host: Prof. Bangbang Ren).
+- *04.2026*, "The Progress of Video Analytics in the Large Model Era". School of Computer Science, NJUPT (host: Prof. Xin He).
 - *03.2025*, "DNN and LMM Empowering Video Analytics Systems". CCF Talk, online (host: CCF Network and Communication Technical Committee; *more than 4000 watchers simultaneously*).
 - *08.2025*, "The Progress of Video Analytics in the Large Model Era". School of Computer Science, Fudan University (host: Prof. Jin Zhao).
 - *10.2024*, "Video Analytics at the Edge". Department of Computer Science and Technology, Nanjing University (host: Prof. Haipeng Dai).

@@ -16,7 +16,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em;
+    padding: .5em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -34,6 +34,10 @@
 }
 
 .masthead__menu {
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+  }
 
   ul {
     margin: 0;
@@ -41,6 +45,10 @@
     clear: both;
     list-style-type: none;
   }
+}
+
+.greedy-nav .visible-links .masthead__menu-home-item + .masthead__menu-item a {
+  margin-left: 0;
 }
 
 .masthead__menu-home-item {

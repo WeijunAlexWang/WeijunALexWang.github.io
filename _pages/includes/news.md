@@ -13,6 +13,10 @@
 - *02/2025*, PEACE was accepted by IEEE TMC. Thanks to all collaborators!
 - *01/2025*, VaLoRA was accepted by EuroSys'25 (Fall round). Congratulations to [Mi](https://mi150.github.io/) for his first top-conference paper!
 - *11/2024*, My proposal on "Research on Efficient Inference of Vision-Large-Model" was approved and funded by the China Postdoctoral Science Foundation. 🎉
+
+<details class="news-archive" markdown="1">
+<summary>Older news</summary>
+
 - *08/2024*, My proposal on "Key Technologies for Large-Model-powered Edge Video Analysis" was approved and funded by NSFC. We are recruiting [research interns](https://air.tsinghua.edu.cn/info/1030/1564.htm) (both undergraduates and graduates). 🎉
 - *07/2024*, RegenHance was accepted by NSDI'25 (Spring round). Many thanks to Prof. Yunxin Liu's insightful comments!
 - *05/2024*, SwapMoE was accepted by ACL'24. Congratulations to [Rui](https://rui-kong.github.io/)!
@@ -23,3 +27,5 @@
 - *07/2023*, Happy to be elected to the Postdoctoral Talent Introduction Program from the Ministry of Education, China (国家博士后海外引才专项) and the Shuimu Tsinghua Scholar Program from Tsinghua University (水木学者). Many thanks to my Postdoc hoster Prof. Yunxin Liu. 🎉
 - *04/2023*, VSiM journal version was accepted to TON. Many thanks to our collaborators Yali, Yuhan, Sripriya, Kai, and Prof. Xiaoming Fu!
 - *03/2023*, I finished my short-term Postdoc period in Göttingen and will join in Tsinghua as a Postdoctoral Fellow hosted by Prof. Yunxin Liu on June! Many thanks for my hoster Prof. Xiaoming Fu at Göttingen, really enjoy the research time there. <img src="{{ '/img/thank-you.png' | relative_url }}" alt="thank-you" height="2em" style="height:2em;vertical-align:middle"/>
+
+</details>

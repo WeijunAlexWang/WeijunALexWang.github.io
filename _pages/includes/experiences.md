@@ -2,8 +2,14 @@
 
 ## Working Experience
 
-- **Postdoc**, Tsinghua University. Jun 2023 – Present.
-- **Postdoc**, University of Göttingen. Sep 2022 – Jun 2023.
+- **Postdoc**, Tsinghua University.
+- **Postdoc**, University of Göttingen.
+
+## Education
+
+- **Ph.D.**, University of Göttingen
+- **Ph.D.**, Nanjing University
+- **B.Eng.**, Nanjing University of Posts and Telecommunications
 
 ## Teaching
 
