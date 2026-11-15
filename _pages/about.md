@@ -27,6 +27,7 @@ My current research interest is emboided AI Infra and LLM Serving Infra. You can
 # Reading List
 Something can help you during your research time.
 
+- [How to set your research problem at this era of chaos](https://pages.cs.wisc.edu/~sharonli/time-in-the-chaos.html)
 - [Tips about writing systems papers](https://www.linzhong.org/opinions/writing.html)
 - [Finding your advisor](https://www.linzhong.org/opinions/findingadvisor.html) 
 - [The sciences of system building](https://www.linzhong.org/opinions/sciencesofsystembuilding.html) ([it is art too](https://www.yecl.org/presentation/2018-08-weareartists.pdf))
