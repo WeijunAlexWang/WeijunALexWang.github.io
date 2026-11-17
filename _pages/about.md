@@ -20,7 +20,10 @@ Before that, I received dual PhD degress from the University of Göttingen co-ad
 
 My research has been published in top-tier venues including SIGCOMM, NSDI, EuroSys, ISCA, MobiCom, MobiSys, INFOCOM, ICML, NeurIPS, and ACL, and journals including TON, TMC, TC, and IJCV. I have served on the program committees of ICDCS, DASFAA, and ICPADS. I am a member of ACM and IEEE.
 
-My current research interest is emboided AI Infra and LLM Serving Infra. You can check my [research statement]({{ '/files/research_statement.pdf' | relative_url }}) for more information if you are interested.
+My current research interests are embodied AI infrastructure and LLM serving infrastructure. You can check my [research statement]({{ '/files/research_statement.pdf' | relative_url }}) for more information if you are interested.
+
+I am looking for highly motivated graduate students, research assistants (RAs) and research interns to work on measuring, analyzing, designing, and implementing AI systems. Students with strong hands-on system building skills and/or mathematical background are especially welcome.
+{: .recruitment-notice }
 
 {% include_relative includes/news.md %}
 
