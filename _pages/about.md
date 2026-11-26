@@ -22,7 +22,7 @@ My research has been published in top-tier venues including SIGCOMM, NSDI, EuroS
 
 My current research interests are embodied AI infrastructure and LLM serving infrastructure. You can check my [research statement]({{ '/files/research_statement.pdf' | relative_url }}) for more information if you are interested.
 
-I am looking for highly motivated graduate students, research assistants (RAs) and research interns to work on measuring, analyzing, designing, and implementing AI systems. Students with strong hands-on system building skills and/or mathematical background are especially welcome.
+I am looking for highly motivated graduate students, research assistants (RAs) and research interns to work on measuring, analyzing, designing, and implementing AI systems. Students with strong hands-on system building skills and/or mathematical background are especially welcome. Please refer to [recruitment]({{ '/recruitment/' | relative_url }})
 {: .recruitment-notice }
 
 {% include_relative includes/news.md %}
