@@ -15,7 +15,7 @@ title: 招生与招聘
 
 ## 项目信息
 
-博士项目分为全日制（助学金）和自费/非全日制两类，研究型硕士项目为全日制。两个项目均为英语授课，毕业生获香港科技大学相应学位。
+博士项目分为全日制（助学金）、全日制（自费）和非全日制三类，研究型硕士项目为全日制。两个项目均为英语授课，毕业生获香港科技大学相应学位。
 
 <table class="recruitment-programs">
   <thead>
@@ -29,12 +29,16 @@ title: 招生与招聘
   <tbody>
     <tr>
       <td>博士（PhD，全日制，助学金）</td>
-      <td rowspan="2">由导师滚动招生，额满为止</td>
-      <td>已获相关研究型硕士学位者通常为 3 年，其他学生通常为 4 年</td>
+      <td rowspan="3">由导师滚动招生，额满为止</td>
+      <td rowspan="2">已获相关研究型硕士学位者通常为 3 年，其他学生通常为 4 年</td>
       <td>每月人民币 15,000 元</td>
     </tr>
     <tr>
-      <td>博士（PhD，自费/非全日制）</td>
+      <td>博士（PhD，全日制，自费）</td>
+      <td>自费</td>
+    </tr>
+    <tr>
+      <td>博士（PhD，非全日制）</td>
       <td>6 年</td>
       <td>自费</td>
     </tr>
@@ -47,7 +51,7 @@ title: 招生与招聘
   </tbody>
 </table>
 
-2027 年秋季入学的全日制奖助学金获得者每学年学费为人民币 60,000 元；自费/非全日制博士生每学年学费为人民币 150,000 元（15 万元/年）。住宿安排和费用以学校通知为准。红鸟硕士的申请条件与时间请见[项目招生说明](https://cft.hkust-gz.edu.cn/zh/rbm-program/admission/)，学费及资助细则请见[研究生院说明](https://fytgs.hkust-gz.edu.cn/admissions/before-submitting-an-application/scholarships-fees)。有意在组内开展研究的红鸟硕士生，可在收到录取后尽早联系我。
+2027 年秋季入学的全日制奖助学金获得者每学年学费为人民币 60,000 元；全日制自费博士生和非全日制博士生每学年学费均为人民币 150,000 元（15 万元/年）。住宿安排和费用以学校通知为准。红鸟硕士的申请条件与时间请见[项目招生说明](https://cft.hkust-gz.edu.cn/zh/rbm-program/admission/)，学费及资助细则请见[研究生院说明](https://fytgs.hkust-gz.edu.cn/admissions/before-submitting-an-application/scholarships-fees)。有意在组内开展研究的红鸟硕士生，可在收到录取后尽早联系我。
 
 ## 课题组研究方向
 
